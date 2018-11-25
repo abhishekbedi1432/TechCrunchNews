@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class FeedDetailCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
