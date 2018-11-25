@@ -38,10 +38,7 @@ class FeedTableViewController: UITableViewController {
         
         //let snackbar = showMessage(error: "Loading ...", duration: .forever)
         
-        guard let url = URL.init(string: "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=8ea484bff03d422c9f59620c9f57f8fd") else {
-            assertionFailure("Malformed URL")
-            return
-        }
+        let url = ENV.baseUrl
         
         let payload = APIPayload(url: url)
         apiHandler.getFlickerFeed(withPayload: payload) { [weak self] networkResult in

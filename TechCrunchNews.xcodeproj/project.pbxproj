@@ -122,13 +122,11 @@
 			children = (
 				E2D1933521AB022E00725160 /* AppDelegate.swift */,
 				E2D1933721AB022E00725160 /* ViewController.swift */,
-				E2D1936921AB238300725160 /* FeedDetailVC.swift */,
-				E2D1936B21AB247F00725160 /* FeedDetailCell.swift */,
-				E2D1936D21AB249400725160 /* FeedDetailImageViewCell.swift */,
+				E2D1935721AB06F100725160 /* Feed Module */,
+				E2D1936F21AB2CE300725160 /* Feed Detail Module */,
 				E2D1936621AB20EC00725160 /* Networking Module */,
 				E2D1936721AB20F900725160 /* Constants */,
 				E2D1936821AB210800725160 /* Helpers */,
-				E2D1935721AB06F100725160 /* Feed Module */,
 				E2D1933921AB022E00725160 /* Main.storyboard */,
 				E2D1933C21AB022F00725160 /* Assets.xcassets */,
 				E2D1933E21AB022F00725160 /* LaunchScreen.storyboard */,
@@ -180,6 +178,16 @@
 				E2D1936421AB1EE400725160 /* URL+Extension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E2D1936F21AB2CE300725160 /* Feed Detail Module */ = {
+			isa = PBXGroup;
+			children = (
+				E2D1936921AB238300725160 /* FeedDetailVC.swift */,
+				E2D1936B21AB247F00725160 /* FeedDetailCell.swift */,
+				E2D1936D21AB249400725160 /* FeedDetailImageViewCell.swift */,
+			);
+			path = "Feed Detail Module";
 			sourceTree = "<group>";
 		};
 		E7309E7DE8C8C8F1C77E87DF /* Pods */ = {
