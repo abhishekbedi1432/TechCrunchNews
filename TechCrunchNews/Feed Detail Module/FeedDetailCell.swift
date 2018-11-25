@@ -14,7 +14,7 @@ class FeedDetailCell: UITableViewCell {
     @IBOutlet weak var subtitleLabel: UILabel!
     
     func configure(withFeedDetailViewModel vm:FeedDetailViewModel) {
-        titleLabel.text = vm.title?.capitalized
+        titleLabel.text    = vm.title?.capitalized
         subtitleLabel.text = vm.subtitle
     }
     

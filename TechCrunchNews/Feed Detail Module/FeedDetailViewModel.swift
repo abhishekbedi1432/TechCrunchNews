@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 struct FeedDetailViewModel {
     var title:String?
     var subtitle:String?

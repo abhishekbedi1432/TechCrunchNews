@@ -15,12 +15,12 @@ enum NetworkResult {
 }
 
 protocol NetworkRequestHandler {
-    func getFeed(withURL url: URL, completionHandler:@escaping (NetworkResult) -> Void)
+    func getFeed(withURL url: URL, completionHandler:@escaping NetworkCompletionHandler)
 }
 
 extension URLSession : NetworkRequestHandler {
     
-    func getFeed(withURL url: URL, completionHandler:@escaping (NetworkResult) -> Void) {
+    func getFeed(withURL url: URL, completionHandler:@escaping NetworkCompletionHandler) {
         
         print("Hit Network Req: \(url.absoluteString)")
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -42,7 +42,6 @@ extension URLSession : NetworkRequestHandler {
                     completionHandler(NetworkResult.failure(error))
                 }
             }
-            
         }
         task.resume()
     }
