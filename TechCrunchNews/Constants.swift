@@ -11,20 +11,9 @@ import Foundation
 struct K {
     
     struct Text {
-        static let findingNewTaxis = "Loading ..."
+        static let loading = "Loading ..."
     }
     
-//    struct Screen {
-//        static let width     = UIScreen.main.bounds.size.width
-//        static let height    = UIScreen.main.bounds.size.height
-//        static let maxLength = max(Screen.width, Screen.height)
-//        static let minLength = min(Screen.width, Screen.height)
-//    }
-//
-//    struct DeviceType {
-//        static let isIphoneX = UIDevice.current.userInterfaceIdiom == .phone && Screen.maxLength == 812
-//    }
-
     struct ImageName {
         static let `default` = "tc-icon"
     }

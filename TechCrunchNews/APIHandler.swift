@@ -27,6 +27,4 @@ struct APIHandler {
         let url = payload.url
         router.getFeed(withURL: url, completionHandler: handler)
     }
-    
-    
 }
