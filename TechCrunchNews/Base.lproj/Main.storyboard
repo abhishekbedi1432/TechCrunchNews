@@ -151,6 +151,78 @@
             </objects>
             <point key="canvasLocation" x="466" y="815"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="xb3-R0-xyC">
+            <objects>
+                <tableViewController id="KsZ-bP-R3e" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mVt-HI-pT4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedDetailImageViewCell" rowHeight="189" id="dGp-gW-PdT" customClass="FeedDetailImageViewCell" customModule="TechCrunchNews" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="189"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dGp-gW-PdT" id="1oP-qI-MTY">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="188.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tc-icon" translatesAutoresizingMaskIntoConstraints="NO" id="CFi-pW-t6h">
+                                            <rect key="frame" x="67" y="30" width="241" height="128.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="CFi-pW-t6h" secondAttribute="height" multiplier="15:8" id="Aqs-A4-RM1"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="CFi-pW-t6h" firstAttribute="centerX" secondItem="1oP-qI-MTY" secondAttribute="centerX" id="ZAr-3k-n9v"/>
+                                        <constraint firstItem="CFi-pW-t6h" firstAttribute="centerY" secondItem="1oP-qI-MTY" secondAttribute="centerY" id="fSh-hH-TLz"/>
+                                        <constraint firstItem="CFi-pW-t6h" firstAttribute="top" secondItem="1oP-qI-MTY" secondAttribute="topMargin" constant="19" id="iI3-So-7Bf"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="img" destination="CFi-pW-t6h" id="h9g-vM-qbD"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedDetailCell" textLabel="Q6d-cr-8ky" detailTextLabel="P8W-7S-r7i" rowHeight="85" style="IBUITableViewCellStyleSubtitle" id="pCA-9z-uwG" customClass="FeedDetailCell" customModule="TechCrunchNews" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="217" width="375" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pCA-9z-uwG" id="qbe-r3-AUg">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Q6d-cr-8ky">
+                                            <rect key="frame" x="16" y="22" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P8W-7S-r7i">
+                                            <rect key="frame" x="16" y="45.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="subtitleLabel" destination="P8W-7S-r7i" id="bVr-f1-hIR"/>
+                                    <outlet property="titleLabel" destination="Q6d-cr-8ky" id="Gc3-LR-meO"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KsZ-bP-R3e" id="bpI-Na-iJR"/>
+                            <outlet property="delegate" destination="KsZ-bP-R3e" id="6r9-yI-zt4"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jwg-Md-uG1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.5999999999999" y="814.54272863568224"/>
+        </scene>
     </scenes>
     <resources>
         <image name="tc-icon" width="159" height="108"/>

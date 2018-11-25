@@ -17,8 +17,6 @@ struct K {
     struct ImageName {
         static let `default` = "tc-icon"
     }
-    
-    
 }
 
 

@@ -47,7 +47,7 @@ class FeedCell: UITableViewCell {
     func configure(withModel model:FeedDisplayable) {
         title.text    = model.title
         subTitle.text = model.description
-        img.kf.setImage(with: model.imageUrl)
-        img.kf.placeholder = UIImage.init(named: K.Image.placeholder) 
+        img.kf.setImage(with: model.imageUrl,
+                        placeholder: UIImage.init(named: K.ImageName.default))
     }
 }
