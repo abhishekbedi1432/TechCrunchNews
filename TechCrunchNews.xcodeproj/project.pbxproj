@@ -31,6 +31,7 @@
 		E2D1937921AB427900725160 /* TestUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1937821AB427900725160 /* TestUtility.swift */; };
 		E2D1937B21AB42D100725160 /* MockTCResponse.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2D1937A21AB42D100725160 /* MockTCResponse.plist */; };
 		E2D1937D21AB43A300725160 /* APITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1937C21AB43A300725160 /* APITesting.swift */; };
+		E2D1937F21AB458E00725160 /* FeedDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1937E21AB458E00725160 /* FeedDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		E2D1937821AB427900725160 /* TestUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUtility.swift; sourceTree = "<group>"; };
 		E2D1937A21AB42D100725160 /* MockTCResponse.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MockTCResponse.plist; sourceTree = "<group>"; };
 		E2D1937C21AB43A300725160 /* APITesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITesting.swift; sourceTree = "<group>"; };
+		E2D1937E21AB458E00725160 /* FeedDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 			children = (
 				E2D1936921AB238300725160 /* FeedDetailVC.swift */,
 				E2D1936B21AB247F00725160 /* FeedDetailCell.swift */,
+				E2D1937E21AB458E00725160 /* FeedDetailViewModel.swift */,
 			);
 			path = "Feed Detail Module";
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				E2D1936C21AB247F00725160 /* FeedDetailCell.swift in Sources */,
 				E2D1935621AB05FC00725160 /* FeedCell.swift in Sources */,
 				E2D1936321AB1E1500725160 /* EnvironmentConstants.swift in Sources */,
+				E2D1937F21AB458E00725160 /* FeedDetailViewModel.swift in Sources */,
 				E2D1935921AB0D7500725160 /* FeedTableViewController.swift in Sources */,
 				E2D1935D21AB0F8E00725160 /* NetworkHandler.swift in Sources */,
 				E2D1936221AB1E1500725160 /* Constants.swift in Sources */,

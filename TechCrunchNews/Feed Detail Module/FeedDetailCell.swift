@@ -8,10 +8,7 @@
 
 import UIKit
 
-struct FeedDetailViewModel {
-    var title:String?
-    var subtitle:String?
-}
+
 
 class FeedDetailCell: UITableViewCell {
 
