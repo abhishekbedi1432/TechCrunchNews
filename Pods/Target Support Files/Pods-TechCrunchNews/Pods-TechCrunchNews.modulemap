@@ -1,0 +1,6 @@
+framework module Pods_TechCrunchNews {
+  umbrella header "Pods-TechCrunchNews-umbrella.h"
+
+  export *
+  module * { export * }
+}
