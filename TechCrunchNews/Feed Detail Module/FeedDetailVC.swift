@@ -67,4 +67,7 @@ class FeedDetailVC: UITableViewController {
         
     }
     
+    deinit {
+        print("Deinit called FeedDetailView")
+    }
 }
