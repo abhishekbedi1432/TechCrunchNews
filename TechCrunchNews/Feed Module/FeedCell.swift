@@ -18,13 +18,23 @@ protocol FeedDisplayable {
     var content:String? {get set}
 }
 
-struct FeedCellViewModel: FeedDisplayable {
+struct FeedViewModel: FeedDisplayable {
     var author: String?
     var title: String?
     var description: String?
     var imageUrl: URL?
     var content: String?
+    
+    init?(feed:Feed) {
+        author = feed.author
+        title = feed.title
+        description = feed.author
+        imageUrl = URL.init(string: feed.urlToImage ?? "")
+        content = feed.content
+    }
 }
+
+
 
 class FeedCell: UITableViewCell {
     
