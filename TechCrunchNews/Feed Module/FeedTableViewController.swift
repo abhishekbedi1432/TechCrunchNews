@@ -10,6 +10,7 @@ import UIKit
 
 class FeedTableViewController: UITableViewController {
 
+    // refresh TableView when new feeds are available
     var feedViewModels:[FeedViewModel] = [] {
         didSet {
             refreshTableView(withFeedViewModels: feedViewModels)
@@ -51,10 +52,8 @@ class FeedTableViewController: UITableViewController {
             //snackbar.dismiss()
             
             switch networkResult {
-            case .failure(let error):
-                DispatchQueue.main.async {
-                    //strongSelf.showMessage(error: error?.localizedDescription ?? "X")
-                }
+            case .failure( _): break
+
             case .success(let json):
                 let feeds = Feed.list(fromJson: json)
                 var feedVMs: [FeedViewModel] = []

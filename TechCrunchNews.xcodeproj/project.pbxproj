@@ -25,6 +25,8 @@
 		E2D1936521AB1EE400725160 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1936421AB1EE400725160 /* URL+Extension.swift */; };
 		E2D1936A21AB238300725160 /* FeedDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1936921AB238300725160 /* FeedDetailVC.swift */; };
 		E2D1936C21AB247F00725160 /* FeedDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1936B21AB247F00725160 /* FeedDetailCell.swift */; };
+		E2D1937121AB3AFF00725160 /* FeedDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1937021AB3AFF00725160 /* FeedDisplayable.swift */; };
+		E2D1937321AB3B2200725160 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1937221AB3B2200725160 /* FeedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		E2D1936421AB1EE400725160 /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		E2D1936921AB238300725160 /* FeedDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailVC.swift; sourceTree = "<group>"; };
 		E2D1936B21AB247F00725160 /* FeedDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailCell.swift; sourceTree = "<group>"; };
+		E2D1937021AB3AFF00725160 /* FeedDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDisplayable.swift; sourceTree = "<group>"; };
+		E2D1937221AB3B2200725160 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +149,10 @@
 		E2D1935721AB06F100725160 /* Feed Module */ = {
 			isa = PBXGroup;
 			children = (
+				E2D1937021AB3AFF00725160 /* FeedDisplayable.swift */,
 				E2D1935E21AB11A300725160 /* Feed.swift */,
 				E2D1935521AB05FC00725160 /* FeedCell.swift */,
+				E2D1937221AB3B2200725160 /* FeedViewModel.swift */,
 				E2D1935821AB0D7500725160 /* FeedTableViewController.swift */,
 			);
 			path = "Feed Module";
@@ -373,11 +379,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D1937321AB3B2200725160 /* FeedViewModel.swift in Sources */,
 				E2D1936A21AB238300725160 /* FeedDetailVC.swift in Sources */,
 				E2D1933821AB022E00725160 /* ViewController.swift in Sources */,
 				E2D1933621AB022E00725160 /* AppDelegate.swift in Sources */,
 				E2D1935B21AB0F6E00725160 /* APIHandler.swift in Sources */,
 				E2D1936521AB1EE400725160 /* URL+Extension.swift in Sources */,
+				E2D1937121AB3AFF00725160 /* FeedDisplayable.swift in Sources */,
 				E2D1935F21AB11A300725160 /* Feed.swift in Sources */,
 				E2D1936C21AB247F00725160 /* FeedDetailCell.swift in Sources */,
 				E2D1935621AB05FC00725160 /* FeedCell.swift in Sources */,
