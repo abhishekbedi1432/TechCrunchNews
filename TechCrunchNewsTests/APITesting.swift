@@ -18,7 +18,7 @@ class APITesting: XCTestCase {
         var responseNode:String = ""
         private var responseString: String? = nil
         
-        func getFeed(withURL url: URL, completionHandler: @escaping (NetworkResult) -> Void) {
+        func getFeed(withURL url: URL, completionHandler: @escaping NetworkCompletionHandler) {
             let data = responseString?.data(using: .utf8)
             let json = try! JSON.init(data: data!)
             completionHandler(NetworkResult.success(json))

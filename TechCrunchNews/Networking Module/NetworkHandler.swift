@@ -14,9 +14,6 @@ enum NetworkResult {
     case failure(Error?)
 }
 
-protocol NetworkRequestHandler {
-    func getFeed(withURL url: URL, completionHandler:@escaping NetworkCompletionHandler)
-}
 
 extension URLSession : NetworkRequestHandler {
     

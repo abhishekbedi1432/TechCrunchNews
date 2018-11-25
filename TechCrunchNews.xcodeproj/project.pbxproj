@@ -32,6 +32,8 @@
 		E2D1937B21AB42D100725160 /* MockTCResponse.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2D1937A21AB42D100725160 /* MockTCResponse.plist */; };
 		E2D1937D21AB43A300725160 /* APITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1937C21AB43A300725160 /* APITesting.swift */; };
 		E2D1937F21AB458E00725160 /* FeedDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1937E21AB458E00725160 /* FeedDetailViewModel.swift */; };
+		E2D1938221AB483100725160 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E2D1938121AB483100725160 /* README.md */; };
+		E2D1938421AB4C5100725160 /* NetworkRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1938321AB4C5100725160 /* NetworkRequestHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		E2D1937A21AB42D100725160 /* MockTCResponse.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MockTCResponse.plist; sourceTree = "<group>"; };
 		E2D1937C21AB43A300725160 /* APITesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITesting.swift; sourceTree = "<group>"; };
 		E2D1937E21AB458E00725160 /* FeedDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewModel.swift; sourceTree = "<group>"; };
+		E2D1938121AB483100725160 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E2D1938321AB4C5100725160 /* NetworkRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		E2D1932921AB022E00725160 = {
 			isa = PBXGroup;
 			children = (
+				E2D1938121AB483100725160 /* README.md */,
 				E2D1933421AB022E00725160 /* TechCrunchNews */,
 				E2D1934921AB022F00725160 /* TechCrunchNewsTests */,
 				E2D1933321AB022E00725160 /* Products */,
@@ -134,6 +139,7 @@
 			children = (
 				E2D1933521AB022E00725160 /* AppDelegate.swift */,
 				E2D1933721AB022E00725160 /* ViewController.swift */,
+				E2D1938721AB4C8000725160 /* Protocols */,
 				E2D1935721AB06F100725160 /* Feed Module */,
 				E2D1936F21AB2CE300725160 /* Feed Detail Module */,
 				E2D1936621AB20EC00725160 /* Networking Module */,
@@ -163,7 +169,6 @@
 		E2D1935721AB06F100725160 /* Feed Module */ = {
 			isa = PBXGroup;
 			children = (
-				E2D1937021AB3AFF00725160 /* FeedDisplayable.swift */,
 				E2D1935E21AB11A300725160 /* Feed.swift */,
 				E2D1935521AB05FC00725160 /* FeedCell.swift */,
 				E2D1937221AB3B2200725160 /* FeedViewModel.swift */,
@@ -206,6 +211,15 @@
 				E2D1937E21AB458E00725160 /* FeedDetailViewModel.swift */,
 			);
 			path = "Feed Detail Module";
+			sourceTree = "<group>";
+		};
+		E2D1938721AB4C8000725160 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E2D1938321AB4C5100725160 /* NetworkRequestHandler.swift */,
+				E2D1937021AB3AFF00725160 /* FeedDisplayable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		E7309E7DE8C8C8F1C77E87DF /* Pods */ = {
@@ -306,6 +320,7 @@
 			files = (
 				E2D1934021AB022F00725160 /* LaunchScreen.storyboard in Resources */,
 				E2D1933D21AB022F00725160 /* Assets.xcassets in Resources */,
+				E2D1938221AB483100725160 /* README.md in Resources */,
 				E2D1933B21AB022E00725160 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +440,7 @@
 				E2D1935B21AB0F6E00725160 /* APIHandler.swift in Sources */,
 				E2D1936521AB1EE400725160 /* URL+Extension.swift in Sources */,
 				E2D1937121AB3AFF00725160 /* FeedDisplayable.swift in Sources */,
+				E2D1938421AB4C5100725160 /* NetworkRequestHandler.swift in Sources */,
 				E2D1935F21AB11A300725160 /* Feed.swift in Sources */,
 				E2D1936C21AB247F00725160 /* FeedDetailCell.swift in Sources */,
 				E2D1935621AB05FC00725160 /* FeedCell.swift in Sources */,
