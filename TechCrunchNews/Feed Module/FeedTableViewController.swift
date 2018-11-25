@@ -17,12 +17,9 @@ class FeedTableViewController: UITableViewController {
         }
     }
     
+    // For Making network calls
     lazy var apiHandler:APIHandler = APIHandler()
     
-    deinit {
-        print("Deinit called")
-    }
-
     @IBAction func refreshButtonAction(_ sender: Any) {
         loadFeed()
     }
@@ -107,6 +104,10 @@ class FeedTableViewController: UITableViewController {
         
         navigationController?.pushViewController(feedDetailVC, animated: true)
         
+    }
+
+    deinit {
+        print("Deinit called")
     }
 
 }
