@@ -27,9 +27,10 @@ class FeedTableViewController: UITableViewController {
     }
 
     private func refreshTableView(withFeedViewModels models:[FeedViewModel]) {
-        tableView.reloadData()
-        //tableView.reloadRows(at: [IndexPath.init(row: 0, section: 0)], with: UITableView.RowAnimation.automatic)
-    
+        
+        let range = NSMakeRange(0, self.tableView.numberOfSections)
+        let sections = NSIndexSet(indexesIn: range)
+        tableView.reloadSections(sections as IndexSet, with: .automatic)
     }
     
     

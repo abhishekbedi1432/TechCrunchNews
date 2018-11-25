@@ -20,6 +20,9 @@
 		E2D1935B21AB0F6E00725160 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1935A21AB0F6E00725160 /* APIHandler.swift */; };
 		E2D1935D21AB0F8E00725160 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1935C21AB0F8E00725160 /* NetworkHandler.swift */; };
 		E2D1935F21AB11A300725160 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1935E21AB11A300725160 /* Feed.swift */; };
+		E2D1936221AB1E1500725160 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1936021AB1E1400725160 /* Constants.swift */; };
+		E2D1936321AB1E1500725160 /* EnvironmentConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1936121AB1E1500725160 /* EnvironmentConstants.swift */; };
+		E2D1936521AB1EE400725160 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1936421AB1EE400725160 /* URL+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		E2D1935A21AB0F6E00725160 /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		E2D1935C21AB0F8E00725160 /* NetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 		E2D1935E21AB11A300725160 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		E2D1936021AB1E1400725160 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E2D1936121AB1E1500725160 /* EnvironmentConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentConstants.swift; sourceTree = "<group>"; };
+		E2D1936421AB1EE400725160 /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 				E2D1933721AB022E00725160 /* ViewController.swift */,
 				E2D1935C21AB0F8E00725160 /* NetworkHandler.swift */,
 				E2D1935A21AB0F6E00725160 /* APIHandler.swift */,
+				E2D1936021AB1E1400725160 /* Constants.swift */,
+				E2D1936121AB1E1500725160 /* EnvironmentConstants.swift */,
+				E2D1936421AB1EE400725160 /* URL+Extension.swift */,
 				E2D1935721AB06F100725160 /* Feed Module */,
 				E2D1933921AB022E00725160 /* Main.storyboard */,
 				E2D1933C21AB022F00725160 /* Assets.xcassets */,
@@ -282,12 +291,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TechCrunchNews/Pods-TechCrunchNews-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,10 +338,13 @@
 				E2D1933821AB022E00725160 /* ViewController.swift in Sources */,
 				E2D1933621AB022E00725160 /* AppDelegate.swift in Sources */,
 				E2D1935B21AB0F6E00725160 /* APIHandler.swift in Sources */,
+				E2D1936521AB1EE400725160 /* URL+Extension.swift in Sources */,
 				E2D1935F21AB11A300725160 /* Feed.swift in Sources */,
 				E2D1935621AB05FC00725160 /* FeedCell.swift in Sources */,
+				E2D1936321AB1E1500725160 /* EnvironmentConstants.swift in Sources */,
 				E2D1935921AB0D7500725160 /* FeedTableViewController.swift in Sources */,
 				E2D1935D21AB0F8E00725160 /* NetworkHandler.swift in Sources */,
+				E2D1936221AB1E1500725160 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
