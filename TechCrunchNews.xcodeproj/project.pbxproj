@@ -25,7 +25,6 @@
 		E2D1936521AB1EE400725160 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1936421AB1EE400725160 /* URL+Extension.swift */; };
 		E2D1936A21AB238300725160 /* FeedDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1936921AB238300725160 /* FeedDetailVC.swift */; };
 		E2D1936C21AB247F00725160 /* FeedDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1936B21AB247F00725160 /* FeedDetailCell.swift */; };
-		E2D1936E21AB249400725160 /* FeedDetailImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1936D21AB249400725160 /* FeedDetailImageViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +64,6 @@
 		E2D1936421AB1EE400725160 /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		E2D1936921AB238300725160 /* FeedDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailVC.swift; sourceTree = "<group>"; };
 		E2D1936B21AB247F00725160 /* FeedDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailCell.swift; sourceTree = "<group>"; };
-		E2D1936D21AB249400725160 /* FeedDetailImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailImageViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +183,6 @@
 			children = (
 				E2D1936921AB238300725160 /* FeedDetailVC.swift */,
 				E2D1936B21AB247F00725160 /* FeedDetailCell.swift */,
-				E2D1936D21AB249400725160 /* FeedDetailImageViewCell.swift */,
 			);
 			path = "Feed Detail Module";
 			sourceTree = "<group>";
@@ -386,7 +383,6 @@
 				E2D1935621AB05FC00725160 /* FeedCell.swift in Sources */,
 				E2D1936321AB1E1500725160 /* EnvironmentConstants.swift in Sources */,
 				E2D1935921AB0D7500725160 /* FeedTableViewController.swift in Sources */,
-				E2D1936E21AB249400725160 /* FeedDetailImageViewCell.swift in Sources */,
 				E2D1935D21AB0F8E00725160 /* NetworkHandler.swift in Sources */,
 				E2D1936221AB1E1500725160 /* Constants.swift in Sources */,
 			);

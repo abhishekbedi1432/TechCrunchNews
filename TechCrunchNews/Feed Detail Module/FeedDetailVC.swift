@@ -7,84 +7,64 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FeedDetailVC: UITableViewController {
-
+    
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    private var imageUrlString = ""
+    var feedViewModel:FeedViewModel! {
+        didSet {
+            let mirror = Mirror(reflecting: feedViewModel as! FeedViewModel)
+            
+            for child in mirror.children  {
+                print("key: \(String(describing: child.label)), value: \(child.value)")
+                if let key = child.label, let value = child.value as? String {
+                    
+                    if key == "imageUrlString" {
+                        imageUrlString = value
+                    }
+                    
+                    let vm = FeedDetailViewModel.init(title: key, subtitle: value)
+                    viewModels.append(vm)
+                }
+                
+            }
+        }
+    }
+    
+    private var viewModels: [FeedDetailViewModel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        print(imageUrlString)
+        imageView.kf.setImage(with: URL.init(string: imageUrlString ),
+                        placeholder: UIImage.init(named: K.ImageName.default))
     }
-
+    
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return viewModels.count
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedDetailCell", for: indexPath) as? FeedDetailCell else {
+            assertionFailure("FeedDetailCell Should be initialized")
+            return UITableViewCell()
+        }
+        
+        let vm = viewModels[indexPath.row];
+        cell.configure(withFeedDetailViewModel: vm)
+        return cell;
+        
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

@@ -15,7 +15,7 @@ protocol FeedDisplayable {
     var author:String? {get set}
     var title:String? {get set}
     var description:String? {get set}
-    var imageUrl:URL? {get set}
+    var imageUrlString:String? {get set}
     var content:String? {get set}
 }
 
@@ -23,15 +23,15 @@ struct FeedViewModel: FeedDisplayable {
     var author: String?
     var title: String?
     var description: String?
-    var imageUrl: URL?
+    var imageUrlString: String?
     var content: String?
     
     init?(feed:Feed) {
-        author = feed.author
-        title = feed.title
-        description = feed.author
-        imageUrl = URL.init(string: feed.urlToImage ?? "")
-        content = feed.content
+        author         = feed.author
+        title          = feed.title
+        description    = feed.author
+        imageUrlString = feed.urlToImage
+        content        = feed.content
     }
 }
 
@@ -47,7 +47,7 @@ class FeedCell: UITableViewCell {
     func configure(withModel model:FeedDisplayable) {
         title.text    = model.title
         subTitle.text = model.description
-        img.kf.setImage(with: model.imageUrl,
+        img.kf.setImage(with: URL.init(string: model.imageUrlString ?? ""),
                         placeholder: UIImage.init(named: K.ImageName.default))
     }
 }

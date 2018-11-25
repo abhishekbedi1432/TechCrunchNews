@@ -36,7 +36,7 @@ class FeedTableViewController: UITableViewController {
     
     @objc private func loadFeed() {
         
-        //let snackbar = showMessage(error: "Loading ...", duration: .forever)
+//        let snackbar = showMessage(error: "Loading ...", duration: .forever)
         
         let url = ENV.baseUrl
         
@@ -99,6 +99,14 @@ class FeedTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
         
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let feedDetailVC = storyboard.instantiateViewController(withIdentifier: "FeedDetailVC") as! FeedDetailVC
+        
+        let vm = feedViewModels[indexPath.row]
+        
+        feedDetailVC.feedViewModel = vm
+        
+        navigationController?.pushViewController(feedDetailVC, animated: true)
         
     }
 

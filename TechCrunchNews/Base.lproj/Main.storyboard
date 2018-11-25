@@ -151,41 +151,33 @@
             </objects>
             <point key="canvasLocation" x="466" y="815"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Feed DetailVC-->
         <scene sceneID="xb3-R0-xyC">
             <objects>
-                <tableViewController id="KsZ-bP-R3e" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="FeedDetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KsZ-bP-R3e" customClass="FeedDetailVC" customModule="TechCrunchNews" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mVt-HI-pT4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="7zd-55-PCK">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Olh-np-Bp1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Olh-np-Bp1" firstAttribute="leading" secondItem="7zd-55-PCK" secondAttribute="leading" id="EL1-FF-HZ3"/>
+                                <constraint firstAttribute="bottom" secondItem="Olh-np-Bp1" secondAttribute="bottom" id="Wm7-bE-b9L"/>
+                                <constraint firstAttribute="trailing" secondItem="Olh-np-Bp1" secondAttribute="trailing" id="hyc-kP-xQd"/>
+                                <constraint firstItem="Olh-np-Bp1" firstAttribute="top" secondItem="7zd-55-PCK" secondAttribute="top" id="kQq-E5-6z0"/>
+                            </constraints>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedDetailImageViewCell" rowHeight="189" id="dGp-gW-PdT" customClass="FeedDetailImageViewCell" customModule="TechCrunchNews" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="189"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dGp-gW-PdT" id="1oP-qI-MTY">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="188.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tc-icon" translatesAutoresizingMaskIntoConstraints="NO" id="CFi-pW-t6h">
-                                            <rect key="frame" x="67" y="30" width="241" height="128.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="CFi-pW-t6h" secondAttribute="height" multiplier="15:8" id="Aqs-A4-RM1"/>
-                                            </constraints>
-                                        </imageView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="CFi-pW-t6h" firstAttribute="centerX" secondItem="1oP-qI-MTY" secondAttribute="centerX" id="ZAr-3k-n9v"/>
-                                        <constraint firstItem="CFi-pW-t6h" firstAttribute="centerY" secondItem="1oP-qI-MTY" secondAttribute="centerY" id="fSh-hH-TLz"/>
-                                        <constraint firstItem="CFi-pW-t6h" firstAttribute="top" secondItem="1oP-qI-MTY" secondAttribute="topMargin" constant="19" id="iI3-So-7Bf"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="img" destination="CFi-pW-t6h" id="h9g-vM-qbD"/>
-                                </connections>
-                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedDetailCell" textLabel="Q6d-cr-8ky" detailTextLabel="P8W-7S-r7i" rowHeight="85" style="IBUITableViewCellStyleSubtitle" id="pCA-9z-uwG" customClass="FeedDetailCell" customModule="TechCrunchNews" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="217" width="375" height="85"/>
+                                <rect key="frame" x="0.0" y="248" width="375" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pCA-9z-uwG" id="qbe-r3-AUg">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
@@ -198,7 +190,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P8W-7S-r7i">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P8W-7S-r7i">
                                             <rect key="frame" x="16" y="45.5" width="44" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -218,6 +210,9 @@
                             <outlet property="delegate" destination="KsZ-bP-R3e" id="6r9-yI-zt4"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="imageView" destination="Olh-np-Bp1" id="ndq-Vz-QcG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwg-Md-uG1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
