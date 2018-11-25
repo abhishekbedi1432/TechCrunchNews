@@ -27,6 +27,8 @@
 		E2D1936C21AB247F00725160 /* FeedDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1936B21AB247F00725160 /* FeedDetailCell.swift */; };
 		E2D1937121AB3AFF00725160 /* FeedDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1937021AB3AFF00725160 /* FeedDisplayable.swift */; };
 		E2D1937321AB3B2200725160 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1937221AB3B2200725160 /* FeedViewModel.swift */; };
+		E2D1937721AB403600725160 /* FeedViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1937621AB403600725160 /* FeedViewModelTests.swift */; };
+		E2D1937921AB427900725160 /* TestUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1937821AB427900725160 /* TestUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		E2D1936B21AB247F00725160 /* FeedDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailCell.swift; sourceTree = "<group>"; };
 		E2D1937021AB3AFF00725160 /* FeedDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDisplayable.swift; sourceTree = "<group>"; };
 		E2D1937221AB3B2200725160 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		E2D1937621AB403600725160 /* FeedViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModelTests.swift; sourceTree = "<group>"; };
+		E2D1937821AB427900725160 /* TestUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				E2D1934A21AB022F00725160 /* TechCrunchNewsTests.swift */,
+				E2D1937621AB403600725160 /* FeedViewModelTests.swift */,
+				E2D1937821AB427900725160 /* TestUtility.swift */,
 				E2D1934C21AB022F00725160 /* Info.plist */,
 			);
 			path = TechCrunchNewsTests;
@@ -234,6 +240,7 @@
 				E2D1934221AB022F00725160 /* Sources */,
 				E2D1934321AB022F00725160 /* Frameworks */,
 				E2D1934421AB022F00725160 /* Resources */,
+				5F9DB7413C43DDB7BCD08C53 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,6 +311,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5F9DB7413C43DDB7BCD08C53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TechCrunchNewsTests/Pods-TechCrunchNewsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TechCrunchNewsTests/Pods-TechCrunchNewsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8D89919B9A48FEE162253801 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,6 +429,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D1937721AB403600725160 /* FeedViewModelTests.swift in Sources */,
+				E2D1937921AB427900725160 /* TestUtility.swift in Sources */,
 				E2D1934B21AB022F00725160 /* TechCrunchNewsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
