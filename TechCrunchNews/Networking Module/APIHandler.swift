@@ -14,7 +14,6 @@ struct APIPayload {
     let url:URL
 }
 
-/// `APIHandler` is
 struct APIHandler {
 
     let router: NetworkRequestHandler
