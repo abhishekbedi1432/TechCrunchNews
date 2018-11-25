@@ -62,7 +62,11 @@ class FeedViewModelTests: XCTestCase {
     
     
     func testIfFeedModelIsProperlyInstantiatedFromJSONLIST() {
-        
+        let responseString = TestUtility.loadResponse(fromPlist: "MockTCResponse", responseNode: "ValidResponse")
+        let jsonObject     = JSON.init(parseJSON: responseString!)
+        let feedList = Feed.list(fromJson: jsonObject)        
+        XCTAssertEqual(feedList.count, 10)
+
     }
 
     
