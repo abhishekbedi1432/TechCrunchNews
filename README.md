@@ -1,6 +1,6 @@
 # Tech Crunch News Feed App
 
-    The tends to read news feed from the Tech Crunch API and show it in a list and detail screens
+    The app tends to read news feed from the Tech Crunch API and show it in a list and detail screens
 
 
 
@@ -28,17 +28,9 @@
 
     The code is neatly organized in folders/groups depicting different modules
 
-
 ## Testability
 
-    As per the requirement, the ViewModels/Models are unit tested
-    The networking module is also unit tested
-
-
-## Performance
-
-    On both the screens, ``` deinit``` is being called making the app performance
-
+    The ViewModels/Models & Networking modules are unit tested
 
 ## 3rd Party Libraries
 
