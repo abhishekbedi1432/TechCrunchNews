@@ -1,13 +1,15 @@
 node {
-    environment {
-        BRANCH = "master"
-    }
-   stage('Checkout') {
+   
+   def BRANCH = 'master'
+   def APPWORKSPACE = 'TechCrunchNews.xcworkspace'
+    
+    
+    stage('Checkout') {
         
         // Checkout files.
         checkout([
             $class: 'GitSCM',
-            branches: [[name: "master"]],
+            branches: [[name: "${BRANCH}"]],
             doGenerateSubmoduleConfigurations: false,
             extensions: [], submoduleCfg: [],
             userRemoteConfigs: [[
@@ -15,31 +17,32 @@ node {
                 url: 'https://github.com/abhishekbedi1432/TechCrunchNews.git'
             ]]
         ])
-
-        // Build and Test
-        //sh 'xcodebuild -scheme "TechCrunchNews" -configuration "Debug" build test -destination "platform=iOS Simulator,name=iPhone 6,OS=10.1" -enableCodeCoverage YES | /usr/local/bin/xcpretty -r junit'
-
-        // Publish test restults.
-       // step([$class: 'JUnitResultArchiver', allowEmptyResults: true, testResults: 'build/reports/junit.xml'])
     }
     
-    
-    stage('Build') {
-
-        // Build and Test
-        // sh 'xcodebuild -scheme "TableViewWithMultipleCellTypes" -configuration "Debug" build test -destination "platform=iOS Simulator,name=iPhone 6,OS=10.1" -enableCodeCoverage YES | /usr/local/bin/xcpretty -r junit'
-        sh 'xcodebuild -scheme "TechCrunchNews" -configuration "Debug" build -destination "platform=iOS Simulator,name=iPhone 6,OS=10.1"'
-        // Publish test restults.
-       // step([$class: 'JUnitResultArchiver', allowEmptyResults: true, testResults: 'build/reports/junit.xml'])
+    stage('Installing dependencies') {
+        sh '/usr/local/bin/pod install --verbose'
     }
     
-       stage('Test') {
-
-        //Test
-         sh 'xcodebuild -scheme "TechCrunchNews" -configuration "Debug" test -destination "platform=iOS Simulator,name=iPhone 6,OS=10.1" -enableCodeCoverage YES | /usr/local/bin/xcpretty -r junit'
-       // sh 'xcodebuild -scheme "TechCrunchNews" -configuration "Debug" build -destination "platform=iOS Simulator,name=iPhone 6,OS=10.1"'
-        // Publish test restults.
-       // step([$class: 'JUnitResultArchiver', allowEmptyResults: true, testResults: 'build/reports/junit.xml'])
+    stage('Clean build') {
+        sh 'xcodebuild clean "build" -workspace "TechCrunchNews.xcworkspace" -scheme "TechCrunchNews" -configuration "Debug" -destination "platform=iOS Simulator,name=iPhone 6,OS=12.1" '
     }
-
+    
+    stage('Analyze') {
+        sh 'xcodebuild analyze build -workspace "TechCrunchNews.xcworkspace" -scheme "TechCrunchNews" -configuration "Debug" -destination "platform=iOS Simulator,name=iPhone 6,OS=12.1"'
+    }
+    
+        stage('Test Target - Build For Testing') {
+           // sh 'xcodebuild clean build -workspace "TechCrunchNews.xcworkspace" -scheme "TechCrunchNews" -configuration "Debug" -destination "platform=iOS Simulator,name=iPhone 6,OS=12.1"'
+           sh 'xcodebuild build-for-testing -workspace "TechCrunchNews.xcworkspace" -scheme "TechCrunchNews" -sdk "iphonesimulator12.1" -destination "OS=12.1,name=iPhone 6" -configuration Debug -enableCodeCoverage YES -derivedDataPath "build"'
+        }
+   
+        stage('Test Target - Running Tests') {
+           sh 'xcodebuild test-without-building -xctestrun "build/Build/Products/TechCrunchNews_iphonesimulator12.1-x86_64.xctestrun" -destination "OS=12.1,name=iPhone 6" -enableCodeCoverage YES  | /usr/local/bin/xcpretty -r junit'
+        }
+   
+        stage('Publish Test Results') {
+           // Publish test restults.
+           step([$class: 'JUnitResultArchiver', allowEmptyResults: true, testResults: 'build/reports/junit.xml'])
+        }
 }
+
