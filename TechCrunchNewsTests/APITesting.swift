@@ -20,7 +20,7 @@ class APITesting: XCTestCase {
         
         func getFeed(withURL url: URL, completionHandler: @escaping NetworkCompletionHandler) {
             let data = responseString?.data(using: .utf8)
-            let json = try! JSON.init(data: data!)
+            let json = try! JSON(data: data!)
             completionHandler(NetworkResult.success(json))
         }
         
@@ -34,9 +34,9 @@ class APITesting: XCTestCase {
     
     
     func testValidResponseLoading() {
-        let router = MockNetworkRequestHandler.init(withPlistName: "MockTCResponse", responseNode: "ValidResponse")
-        let apiHandler = APIHandler.init(router: router)
-        let payload = APIPayload.init(url: URL.init(string: "www.google.com")!)
+        let router = MockNetworkRequestHandler(withPlistName: "MockTCResponse", responseNode: "ValidResponse")
+        let apiHandler = APIHandler(router: router)
+        let payload = APIPayload(url: URL(string: "www.google.com")!)
         
         apiHandler.getFlickerFeed(withPayload: payload) { (networkResult) in
             

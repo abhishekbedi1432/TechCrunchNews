@@ -55,7 +55,7 @@ class FeedTableViewController: UITableViewController {
                 let feeds = Feed.list(fromJson: json)
                 var feedVMs: [FeedViewModel] = []
                 for feed in feeds {
-                    if let feedVM = FeedViewModel.init(feed: feed) {
+                    if let feedVM = FeedViewModel(feed: feed) {
                         feedVMs.append(feedVM)
                     }
                 }
@@ -68,7 +68,7 @@ class FeedTableViewController: UITableViewController {
         super.viewDidLoad()
         
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonItem.SystemItem.refresh, target: self, action: #selector(loadFeed))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.refresh, target: self, action: #selector(loadFeed))
         
         loadFeed()
     }
@@ -95,7 +95,7 @@ class FeedTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
         
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let feedDetailVC = storyboard.instantiateViewController(withIdentifier: "FeedDetailVC") as! FeedDetailVC
         
         let vm = feedViewModels[indexPath.row]

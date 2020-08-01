@@ -21,8 +21,8 @@ extension Environment {
     var baseUrl:URL {
         
         switch self {
-        case .prod:     return URL.init(staticString: "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=8ea484bff03d422c9f59620c9f57f8fd")
-        case .uat:      return URL.init(staticString: "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=8ea484bff03d422c9f59620c9f57f8fd")
+        case .prod:     return URL(staticString: "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=8ea484bff03d422c9f59620c9f57f8fd")
+        case .uat:      return URL(staticString: "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=8ea484bff03d422c9f59620c9f57f8fd")
         }
     }
 }
