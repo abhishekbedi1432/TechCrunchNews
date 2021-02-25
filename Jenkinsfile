@@ -3,7 +3,6 @@ node {
    def BRANCH = 'master'
    def APPWORKSPACE = 'TechCrunchNews.xcworkspace'
     
-    
     stage('Checkout') {
         
         // Checkout files.
