@@ -1,9 +1,17 @@
 PODS:
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
   - Kingfisher (4.10.1)
+  - my_flutter (0.0.1):
+    - Flutter
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
+  - Flutter (from `my_flutter/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `my_flutter/.ios/Flutter/FlutterPluginRegistrant`)
   - Kingfisher (~> 4.3)
+  - my_flutter (from `my_flutter/.ios/Flutter`)
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
@@ -11,10 +19,21 @@ SPEC REPOS:
     - Kingfisher
     - SwiftyJSON
 
+EXTERNAL SOURCES:
+  Flutter:
+    :path: my_flutter/.ios/Flutter/engine
+  FlutterPluginRegistrant:
+    :path: my_flutter/.ios/Flutter/FlutterPluginRegistrant
+  my_flutter:
+    :path: my_flutter/.ios/Flutter
+
 SPEC CHECKSUMS:
+  Flutter: ac41d61a47ae5bf8195a5598d2d63754888ec0d5
+  FlutterPluginRegistrant: 2afd5ea46d3a949472c9b7da6462d8fbf7d8b16e
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  my_flutter: 5f71a42a61a499a9f322f2c0f62fc185a5807c9b
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 26251bcc60483bb323c67a600659c97fa28662c4
+PODFILE CHECKSUM: 22055b2d20e1b2cc647d4366de23481698721664
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		379330283EEA7B9BF2D86471 /* Pods_TechCrunchNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B51822126929701C2987882 /* Pods_TechCrunchNews.framework */; };
+		3B2890A926A8247900853C01 /* FeedTableViewController+Flutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2890A826A8247900853C01 /* FeedTableViewController+Flutter.swift */; };
 		DFB095834786C950DE12A2B8 /* Pods_TechCrunchNewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968F2F34641059DFEB9430DD /* Pods_TechCrunchNewsTests.framework */; };
 		E2D1933621AB022E00725160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1933521AB022E00725160 /* AppDelegate.swift */; };
 		E2D1933821AB022E00725160 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1933721AB022E00725160 /* ViewController.swift */; };
@@ -48,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		32820C1123B4672A9E59FFFF /* Pods-TechCrunchNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechCrunchNews/Pods-TechCrunchNews.release.xcconfig"; sourceTree = "<group>"; };
+		3B2890A826A8247900853C01 /* FeedTableViewController+Flutter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedTableViewController+Flutter.swift"; sourceTree = "<group>"; };
+		3BF803402696322400E6600A /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
 		3F08687E9D8D4F8C2DB9A7CA /* Pods-TechCrunchNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechCrunchNews/Pods-TechCrunchNews.debug.xcconfig"; sourceTree = "<group>"; };
 		4B51822126929701C2987882 /* Pods_TechCrunchNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechCrunchNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		748546B2D8DBC6A8997F7BEB /* Pods-TechCrunchNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechCrunchNewsTests/Pods-TechCrunchNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,7 +62,7 @@
 		E2D1933A21AB022E00725160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2D1933C21AB022F00725160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2D1933F21AB022F00725160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E2D1934121AB022F00725160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2D1934121AB022F00725160 /* Info-Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
 		E2D1934621AB022F00725160 /* TechCrunchNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechCrunchNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D1934A21AB022F00725160 /* TechCrunchNewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechCrunchNewsTests.swift; sourceTree = "<group>"; };
 		E2D1934C21AB022F00725160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,7 +151,8 @@
 				E2D1933921AB022E00725160 /* Main.storyboard */,
 				E2D1933C21AB022F00725160 /* Assets.xcassets */,
 				E2D1933E21AB022F00725160 /* LaunchScreen.storyboard */,
-				E2D1934121AB022F00725160 /* Info.plist */,
+				E2D1934121AB022F00725160 /* Info-Debug.plist */,
+				3BF803402696322400E6600A /* Info-Release.plist */,
 			);
 			path = TechCrunchNews;
 			sourceTree = "<group>";
@@ -173,6 +177,7 @@
 				E2D1935521AB05FC00725160 /* FeedCell.swift */,
 				E2D1937221AB3B2200725160 /* FeedViewModel.swift */,
 				E2D1935821AB0D7500725160 /* FeedTableViewController.swift */,
+				3B2890A826A8247900853C01 /* FeedTableViewController+Flutter.swift */,
 			);
 			path = "Feed Module";
 			sourceTree = "<group>";
@@ -241,10 +246,13 @@
 			buildConfigurationList = E2D1934F21AB022F00725160 /* Build configuration list for PBXNativeTarget "TechCrunchNews" */;
 			buildPhases = (
 				8D89919B9A48FEE162253801 /* [CP] Check Pods Manifest.lock */,
+				B744C1436FB9BBEE7889AA3E /* Timing START */,
+				DA79EBE89E0D74A8CF074C4D /* [CP-User] Run Flutter Build my_flutter Script */,
 				E2D1932E21AB022E00725160 /* Sources */,
 				E2D1932F21AB022E00725160 /* Frameworks */,
 				E2D1933021AB022E00725160 /* Resources */,
 				AAF7E630EC29E4FC928DBD75 /* [CP] Embed Pods Frameworks */,
+				CBD34F0FFB6ED7BA49F65B91 /* Timing END */,
 			);
 			buildRules = (
 			);
@@ -260,10 +268,12 @@
 			buildConfigurationList = E2D1935221AB022F00725160 /* Build configuration list for PBXNativeTarget "TechCrunchNewsTests" */;
 			buildPhases = (
 				BDD407A1DC4A9D3DF57DB8BF /* [CP] Check Pods Manifest.lock */,
+				E4D284FAC9465FD27C4B1AF9 /* Timing START */,
 				E2D1934221AB022F00725160 /* Sources */,
 				E2D1934321AB022F00725160 /* Frameworks */,
 				E2D1934421AB022F00725160 /* Resources */,
 				5F9DB7413C43DDB7BCD08C53 /* [CP] Embed Pods Frameworks */,
+				6CE39007FEC14F08DA858162 /* Timing END */,
 			);
 			buildRules = (
 			);
@@ -353,6 +363,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechCrunchNewsTests/Pods-TechCrunchNewsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6CE39007FEC14F08DA858162 /* Timing END */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing END";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"end\\\"},\" >> ~/.timings.xcode\n";
+		};
 		8D89919B9A48FEE162253801 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,6 +420,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechCrunchNews/Pods-TechCrunchNews-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B744C1436FB9BBEE7889AA3E /* Timing START */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing START";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"start\\\"},\" >> ~/.timings.xcode\n";
+		};
 		BDD407A1DC4A9D3DF57DB8BF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,6 +460,52 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CBD34F0FFB6ED7BA49F65B91 /* Timing END */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing END";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"end\\\"},\" >> ~/.timings.xcode\n";
+		};
+		DA79EBE89E0D74A8CF074C4D /* [CP-User] Run Flutter Build my_flutter Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build my_flutter Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/my_flutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+		E4D284FAC9465FD27C4B1AF9 /* Timing START */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Timing START";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "      DATE=`date \"+%Y-%m-%dT%H:%M:%S.%s\"`\n      echo \"{\\\"date\\\":\\\"$DATE\\\", \\\"taskName\\\":\\\"$TARGETNAME\\\", \\\"event\\\":\\\"start\\\"},\" >> ~/.timings.xcode\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -434,6 +526,7 @@
 				E2D1935621AB05FC00725160 /* FeedCell.swift in Sources */,
 				E2D1936321AB1E1500725160 /* EnvironmentConstants.swift in Sources */,
 				E2D1937F21AB458E00725160 /* FeedDetailViewModel.swift in Sources */,
+				3B2890A926A8247900853C01 /* FeedTableViewController+Flutter.swift in Sources */,
 				E2D1935921AB0D7500725160 /* FeedTableViewController.swift in Sources */,
 				E2D1935D21AB0F8E00725160 /* NetworkHandler.swift in Sources */,
 				E2D1936221AB1E1500725160 /* Constants.swift in Sources */,
@@ -604,7 +697,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D3BM54CRMY;
-				INFOPLIST_FILE = TechCrunchNews/Info.plist;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				INFOPLIST_FILE = "TechCrunchNews/Info-Debug.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -624,7 +719,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D3BM54CRMY;
-				INFOPLIST_FILE = TechCrunchNews/Info.plist;
+				EXCLUDED_ARCHS = "";
+				INFOPLIST_FILE = "TechCrunchNews/Info-Release.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

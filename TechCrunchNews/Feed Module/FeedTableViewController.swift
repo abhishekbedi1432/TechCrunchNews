@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Flutter
 
 class FeedTableViewController: UITableViewController {
-
+    
+    var flutterViewController = FlutterViewController(engine: (UIApplication.shared.delegate as! AppDelegate).flutterEngine, nibName: nil, bundle: nil)
+    
+    
     // refresh TableView when new feeds are available
     var feedViewModels:[FeedViewModel] = [] {
         didSet {
@@ -64,13 +68,15 @@ class FeedTableViewController: UITableViewController {
             
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.refresh, target: self, action: #selector(loadFeed))
         
         loadFeed()
+        
+        setupFlutterChannel()
     }
 
     // MARK: - Table view data source
@@ -91,9 +97,12 @@ class FeedTableViewController: UITableViewController {
         return cell
     }
     
+    
     // MARK: - Table view delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
+        showFlutter()
+        return
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let feedDetailVC = storyboard.instantiateViewController(withIdentifier: "FeedDetailVC") as! FeedDetailVC
