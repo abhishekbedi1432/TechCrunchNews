@@ -33,7 +33,7 @@ extension Feed {
     static func list(fromJson json:JSON) -> [Feed] {
         let articles = json["articles"].arrayValue;
         return articles.compactMap({ (json) -> Feed? in
-            if let feed = Feed.init(json: json) {
+            if let feed = Feed(json: json) {
                 return feed
             }
             return nil

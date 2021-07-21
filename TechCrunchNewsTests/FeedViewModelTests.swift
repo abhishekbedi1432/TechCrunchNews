@@ -30,9 +30,9 @@ class FeedViewModelTests: XCTestCase {
       "content": "A let of content"
     }
 """
-        let jsonObj = JSON.init(parseJSON: jsonString)
-        let feed = Feed.init(json: jsonObj)!
-        let feedViewModel = FeedViewModel.init(feed: feed)
+        let jsonObj = JSON(parseJSON: jsonString)
+        let feed = Feed(json: jsonObj)!
+        let feedViewModel = FeedViewModel(feed: feed)
         XCTAssertNotNil(feedViewModel)
         XCTAssertEqual(feedViewModel?.author, "Jon Evans")
         
@@ -55,15 +55,15 @@ class FeedViewModelTests: XCTestCase {
       "content": "A let of content"
     }
 """
-        let jsonObj = JSON.init(parseJSON: jsonString)
-        let feed = Feed.init(json: jsonObj)
+        let jsonObj = JSON(parseJSON: jsonString)
+        let feed = Feed(json: jsonObj)
         XCTAssertNil(feed)
     }
     
     
     func testIfFeedModelIsProperlyInstantiatedFromJSONLIST() {
         let responseString = TestUtility.loadResponse(fromPlist: "MockTCResponse", responseNode: "ValidResponse")
-        let jsonObject     = JSON.init(parseJSON: responseString!)
+        let jsonObject     = JSON(parseJSON: responseString!)
         let feedList = Feed.list(fromJson: jsonObject)        
         XCTAssertEqual(feedList.count, 10)
 

@@ -30,7 +30,7 @@ class FeedDetailVC: UITableViewController {
                         imageUrlString = value
                     }
                     
-                    let vm = FeedDetailViewModel.init(title: key, subtitle: value)
+                    let vm = FeedDetailViewModel(title: key, subtitle: value)
                     viewModels.append(vm)
                 }
                 
@@ -54,8 +54,8 @@ class FeedDetailVC: UITableViewController {
     // MARK: - Article Image Setup
 
     private func setupArticleImage() {
-        imageView.kf.setImage(with: URL.init(string: imageUrlString ),
-                              placeholder: UIImage.init(named: K.ImageName.default))
+        imageView.kf.setImage(with: URL(string: imageUrlString ),
+                              placeholder: UIImage(named: K.ImageName.default))
     }
     
     
