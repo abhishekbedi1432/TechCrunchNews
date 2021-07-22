@@ -1,25 +1,19 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import 'dart:convert';
-// import 'package:my_app/change_name_card.dart';
-// import 'package:my_app/drawer.dart';
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:http/http.dart' as http;
 import 'package:my_flutter/utils/Constants.dart';
-// import 'package:my_app/utils/Constants.dart';
-
-// ignore: use_key_in_widget_constructors
-class HomePage extends StatefulWidget {
-  @override
-  _HomePageState createState() => _HomePageState();
-}
 
 enum ViewType { list, grid }
 
-class _HomePageState extends State<HomePage> {
+// ignore: use_key_in_widget_constructors
+class PLPPage extends StatefulWidget {
+  @override
+  _PLPPageState createState() => _PLPPageState();
+}
+
+class _PLPPageState extends State<PLPPage> {
   static const platform = MethodChannel(Constants.iOSChannel);
 
   var url = "https://jsonplaceholder.typicode.com/photos";
@@ -87,11 +81,11 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
         appBar: AppBar(
-          title: Text("App Title"),
+          title: Text("PLP"),
           leading: GestureDetector(
-            onTap: () {/* Write listener code here */},
+            onTap: onBackButtonPressed,
             child: Icon(
-              Icons.menu, // add custom icons also
+              Icons.arrow_back_ios, // add custom icons also
             ),
           ),
           actions: <Widget>[
@@ -109,6 +103,10 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         body: body);
+  }
+
+  void onBackButtonPressed() async {
+    print("Back Button Pressed");
   }
 
   Future<void> onListTilePressed() async {
