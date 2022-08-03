@@ -1,20 +1,46 @@
 PODS:
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
   - Kingfisher (4.10.1)
+  - SBTUITestTunnelClient (8.3.0):
+    - SBTUITestTunnelCommon
+  - SBTUITestTunnelCommon (8.3.0)
+  - SBTUITestTunnelServer (8.3.0):
+    - GCDWebServer
+    - SBTUITestTunnelCommon
   - SwiftyJSON (4.2.0)
+  - XCTest-Gherkin (0.21.2):
+    - XCTest-Gherkin/Core (= 0.21.2)
+  - XCTest-Gherkin/Core (0.21.2)
 
 DEPENDENCIES:
   - Kingfisher (~> 4.3)
+  - SBTUITestTunnelClient
+  - SBTUITestTunnelServer
   - SwiftyJSON (~> 4.0)
+  - XCTest-Gherkin
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Kingfisher
     - SwiftyJSON
+  trunk:
+    - GCDWebServer
+    - SBTUITestTunnelClient
+    - SBTUITestTunnelCommon
+    - SBTUITestTunnelServer
+    - XCTest-Gherkin
 
 SPEC CHECKSUMS:
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  SBTUITestTunnelClient: 873869031cec61a5b5540d66f5171a7abdad835d
+  SBTUITestTunnelCommon: 21371c4796ce6826b937d29c79cd8c758f31d775
+  SBTUITestTunnelServer: cb25d44ba2432d46efed49a0c3879c3d59f0915c
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  XCTest-Gherkin: 7c78531780d520bbec90b035077b0bf9fc178717
 
-PODFILE CHECKSUM: 26251bcc60483bb323c67a600659c97fa28662c4
+PODFILE CHECKSUM: 5f282ae2c4d5259b525559b4859baabcff109bef
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.11.3

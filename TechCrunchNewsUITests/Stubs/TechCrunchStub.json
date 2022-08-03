@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "totalResults": 1,
+  "articles": [
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Annie Njanja",
+      "title": "Kenyan insurtech Lami raises $3.7M seed extension led by Harlem Capital",
+      "description": "Lami has expanded to Egypt and Nigeria.",
+      "url": "https://techcrunch.com/2022/08/02/kenyan-insurtech-lami-raises-3-7m-seed-extension-led-by-harlem-capital/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/08/Jihan-Abass.-e1659423730694.jpg?w=702",
+      "publishedAt": "2022-08-02T07:00:05Z",
+      "content": "Right from the launch of its first product in 2020, Kenyan insurtech Lami Technologies set out to increase insurance penetration in Kenya and the rest of Africa. They began on this path by building a… [+5513 chars]"
+    }
+  ]
+}

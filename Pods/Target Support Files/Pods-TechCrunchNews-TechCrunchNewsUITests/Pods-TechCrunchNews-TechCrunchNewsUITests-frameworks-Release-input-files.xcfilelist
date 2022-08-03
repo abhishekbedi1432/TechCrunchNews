@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-TechCrunchNews-TechCrunchNewsUITests/Pods-TechCrunchNews-TechCrunchNewsUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/XCTest-Gherkin/XCTest_Gherkin.framework

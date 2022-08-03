@@ -3,12 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		379330283EEA7B9BF2D86471 /* Pods_TechCrunchNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B51822126929701C2987882 /* Pods_TechCrunchNews.framework */; };
-		DFB095834786C950DE12A2B8 /* Pods_TechCrunchNewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968F2F34641059DFEB9430DD /* Pods_TechCrunchNewsTests.framework */; };
+		14D54E2CB230E4C9539BBF79 /* Pods_TechCrunchNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF343F1532365BB5CC45867B /* Pods_TechCrunchNews.framework */; };
+		686B96202897FCA200914FBC /* UITestObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686B961F2897FCA200914FBC /* UITestObserver.swift */; };
+		686B962528990A4D00914FBC /* TechCrunchStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 686B962428990A4D00914FBC /* TechCrunchStub.json */; };
+		68C66E882892A6E40001A8DA /* TechCrunchNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C66E872892A6E40001A8DA /* TechCrunchNewsUITests.swift */; };
+		68C66E942892A8E70001A8DA /* FilterAndSortVendorListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C66E912892A8E70001A8DA /* FilterAndSortVendorListFeature.swift */; };
+		68C66E952892A8E70001A8DA /* TalabatSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C66E932892A8E70001A8DA /* TalabatSteps.swift */; };
+		68DEF045289A5F1700333723 /* Gherkin_FilterAndSortVendorList.feature in Resources */ = {isa = PBXBuildFile; fileRef = 68DEF044289A5F1700333723 /* Gherkin_FilterAndSortVendorList.feature */; };
+		A80A6AB455D538EE2837BAC4 /* Pods_TechCrunchNewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3428777BC24C6C6F936BE51E /* Pods_TechCrunchNewsTests.framework */; };
+		DC060CB49BF5A614563F230B /* Pods_TechCrunchNews_TechCrunchNewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9C578349FED9572FDF982D /* Pods_TechCrunchNews_TechCrunchNewsUITests.framework */; };
 		E2D1933621AB022E00725160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1933521AB022E00725160 /* AppDelegate.swift */; };
 		E2D1933821AB022E00725160 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1933721AB022E00725160 /* ViewController.swift */; };
 		E2D1933B21AB022E00725160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D1933921AB022E00725160 /* Main.storyboard */; };
@@ -37,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		68C66E8B2892A6E40001A8DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D1932A21AB022E00725160 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2D1933121AB022E00725160;
+			remoteInfo = TechCrunchNews;
+		};
 		E2D1934721AB022F00725160 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E2D1932A21AB022E00725160 /* Project object */;
@@ -47,12 +61,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		32820C1123B4672A9E59FFFF /* Pods-TechCrunchNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechCrunchNews/Pods-TechCrunchNews.release.xcconfig"; sourceTree = "<group>"; };
-		3F08687E9D8D4F8C2DB9A7CA /* Pods-TechCrunchNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechCrunchNews/Pods-TechCrunchNews.debug.xcconfig"; sourceTree = "<group>"; };
-		4B51822126929701C2987882 /* Pods_TechCrunchNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechCrunchNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		748546B2D8DBC6A8997F7BEB /* Pods-TechCrunchNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechCrunchNewsTests/Pods-TechCrunchNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		91BE9D15801E32F1AA79B138 /* Pods-TechCrunchNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechCrunchNewsTests/Pods-TechCrunchNewsTests.release.xcconfig"; sourceTree = "<group>"; };
-		968F2F34641059DFEB9430DD /* Pods_TechCrunchNewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechCrunchNewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D9C578349FED9572FDF982D /* Pods_TechCrunchNews_TechCrunchNewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechCrunchNews_TechCrunchNewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3428777BC24C6C6F936BE51E /* Pods_TechCrunchNewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechCrunchNewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C9AF7CB09B367E7457EA2E /* Pods-TechCrunchNews-TechCrunchNewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNews-TechCrunchNewsUITests.debug.xcconfig"; path = "Target Support Files/Pods-TechCrunchNews-TechCrunchNewsUITests/Pods-TechCrunchNews-TechCrunchNewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4772320555A848F6D5A2A72B /* Pods-TechCrunchNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNews.release.xcconfig"; path = "Target Support Files/Pods-TechCrunchNews/Pods-TechCrunchNews.release.xcconfig"; sourceTree = "<group>"; };
+		51CA0F0D3641479DF8108906 /* Pods-TechCrunchNewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNewsUITests.release.xcconfig"; path = "Target Support Files/Pods-TechCrunchNewsUITests/Pods-TechCrunchNewsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		686B961F2897FCA200914FBC /* UITestObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestObserver.swift; sourceTree = "<group>"; };
+		686B962428990A4D00914FBC /* TechCrunchStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TechCrunchStub.json; sourceTree = "<group>"; };
+		68C66E852892A6E40001A8DA /* TechCrunchNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechCrunchNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C66E872892A6E40001A8DA /* TechCrunchNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechCrunchNewsUITests.swift; sourceTree = "<group>"; };
+		68C66E912892A8E70001A8DA /* FilterAndSortVendorListFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterAndSortVendorListFeature.swift; sourceTree = "<group>"; };
+		68C66E932892A8E70001A8DA /* TalabatSteps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalabatSteps.swift; sourceTree = "<group>"; };
+		68DEF044289A5F1700333723 /* Gherkin_FilterAndSortVendorList.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gherkin_FilterAndSortVendorList.feature; sourceTree = "<group>"; };
+		7E84E081BCFDE7CDF5545AE3 /* Pods-TechCrunchNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNewsTests.release.xcconfig"; path = "Target Support Files/Pods-TechCrunchNewsTests/Pods-TechCrunchNewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		B8336BE3F34FC11ED9877CBA /* Pods-TechCrunchNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNewsTests.debug.xcconfig"; path = "Target Support Files/Pods-TechCrunchNewsTests/Pods-TechCrunchNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B87F3E0516AC69FF1DD8679C /* Pods-TechCrunchNewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNewsUITests.debug.xcconfig"; path = "Target Support Files/Pods-TechCrunchNewsUITests/Pods-TechCrunchNewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF343F1532365BB5CC45867B /* Pods_TechCrunchNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechCrunchNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA47AD893ABC2D629749524A /* Pods-TechCrunchNews-TechCrunchNewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNews-TechCrunchNewsUITests.release.xcconfig"; path = "Target Support Files/Pods-TechCrunchNews-TechCrunchNewsUITests/Pods-TechCrunchNews-TechCrunchNewsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E2D1933221AB022E00725160 /* TechCrunchNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechCrunchNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D1933521AB022E00725160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2D1933721AB022E00725160 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,14 +107,23 @@
 		E2D1937E21AB458E00725160 /* FeedDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewModel.swift; sourceTree = "<group>"; };
 		E2D1938121AB483100725160 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E2D1938321AB4C5100725160 /* NetworkRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestHandler.swift; sourceTree = "<group>"; };
+		FF3679C7FCA0CA0BD33CD909 /* Pods-TechCrunchNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCrunchNews.debug.xcconfig"; path = "Target Support Files/Pods-TechCrunchNews/Pods-TechCrunchNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		68C66E822892A6E40001A8DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC060CB49BF5A614563F230B /* Pods_TechCrunchNews_TechCrunchNewsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2D1932F21AB022E00725160 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				379330283EEA7B9BF2D86471 /* Pods_TechCrunchNews.framework in Frameworks */,
+				14D54E2CB230E4C9539BBF79 /* Pods_TechCrunchNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,20 +131,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFB095834786C950DE12A2B8 /* Pods_TechCrunchNewsTests.framework in Frameworks */,
+				A80A6AB455D538EE2837BAC4 /* Pods_TechCrunchNewsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AF070D3799348B87F42CC3B /* Frameworks */ = {
+		4F6342816F0A9389F7E92930 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4B51822126929701C2987882 /* Pods_TechCrunchNews.framework */,
-				968F2F34641059DFEB9430DD /* Pods_TechCrunchNewsTests.framework */,
+				BF343F1532365BB5CC45867B /* Pods_TechCrunchNews.framework */,
+				3428777BC24C6C6F936BE51E /* Pods_TechCrunchNewsTests.framework */,
+				0D9C578349FED9572FDF982D /* Pods_TechCrunchNews_TechCrunchNewsUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		686B962328990A4D00914FBC /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				686B962428990A4D00914FBC /* TechCrunchStub.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		68C66E862892A6E40001A8DA /* TechCrunchNewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68DEF043289A5F1700333723 /* FeatureFiles */,
+				686B962328990A4D00914FBC /* Stubs */,
+				68C66E922892A8E70001A8DA /* Steps */,
+				68C66E902892A8E70001A8DA /* TestRuners */,
+				68C66E872892A6E40001A8DA /* TechCrunchNewsUITests.swift */,
+				686B961F2897FCA200914FBC /* UITestObserver.swift */,
+			);
+			path = TechCrunchNewsUITests;
+			sourceTree = "<group>";
+		};
+		68C66E902892A8E70001A8DA /* TestRuners */ = {
+			isa = PBXGroup;
+			children = (
+				68C66E912892A8E70001A8DA /* FilterAndSortVendorListFeature.swift */,
+			);
+			path = TestRuners;
+			sourceTree = "<group>";
+		};
+		68C66E922892A8E70001A8DA /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				68C66E932892A8E70001A8DA /* TalabatSteps.swift */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		68DEF043289A5F1700333723 /* FeatureFiles */ = {
+			isa = PBXGroup;
+			children = (
+				68DEF044289A5F1700333723 /* Gherkin_FilterAndSortVendorList.feature */,
+			);
+			path = FeatureFiles;
+			sourceTree = "<group>";
+		};
+		C92BC349C6B97F1AA183D360 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF3679C7FCA0CA0BD33CD909 /* Pods-TechCrunchNews.debug.xcconfig */,
+				4772320555A848F6D5A2A72B /* Pods-TechCrunchNews.release.xcconfig */,
+				B8336BE3F34FC11ED9877CBA /* Pods-TechCrunchNewsTests.debug.xcconfig */,
+				7E84E081BCFDE7CDF5545AE3 /* Pods-TechCrunchNewsTests.release.xcconfig */,
+				B87F3E0516AC69FF1DD8679C /* Pods-TechCrunchNewsUITests.debug.xcconfig */,
+				51CA0F0D3641479DF8108906 /* Pods-TechCrunchNewsUITests.release.xcconfig */,
+				37C9AF7CB09B367E7457EA2E /* Pods-TechCrunchNews-TechCrunchNewsUITests.debug.xcconfig */,
+				CA47AD893ABC2D629749524A /* Pods-TechCrunchNews-TechCrunchNewsUITests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		E2D1932921AB022E00725160 = {
@@ -119,9 +214,10 @@
 				E2D1938121AB483100725160 /* README.md */,
 				E2D1933421AB022E00725160 /* TechCrunchNews */,
 				E2D1934921AB022F00725160 /* TechCrunchNewsTests */,
+				68C66E862892A6E40001A8DA /* TechCrunchNewsUITests */,
 				E2D1933321AB022E00725160 /* Products */,
-				E7309E7DE8C8C8F1C77E87DF /* Pods */,
-				0AF070D3799348B87F42CC3B /* Frameworks */,
+				C92BC349C6B97F1AA183D360 /* Pods */,
+				4F6342816F0A9389F7E92930 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +226,7 @@
 			children = (
 				E2D1933221AB022E00725160 /* TechCrunchNews.app */,
 				E2D1934621AB022F00725160 /* TechCrunchNewsTests.xctest */,
+				68C66E852892A6E40001A8DA /* TechCrunchNewsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,29 +319,38 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		E7309E7DE8C8C8F1C77E87DF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3F08687E9D8D4F8C2DB9A7CA /* Pods-TechCrunchNews.debug.xcconfig */,
-				32820C1123B4672A9E59FFFF /* Pods-TechCrunchNews.release.xcconfig */,
-				748546B2D8DBC6A8997F7BEB /* Pods-TechCrunchNewsTests.debug.xcconfig */,
-				91BE9D15801E32F1AA79B138 /* Pods-TechCrunchNewsTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		68C66E842892A6E40001A8DA /* TechCrunchNewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68C66E8F2892A6E50001A8DA /* Build configuration list for PBXNativeTarget "TechCrunchNewsUITests" */;
+			buildPhases = (
+				2C24F3049D4E9BF692991EDE /* [CP] Check Pods Manifest.lock */,
+				68C66E812892A6E40001A8DA /* Sources */,
+				68C66E822892A6E40001A8DA /* Frameworks */,
+				68C66E832892A6E40001A8DA /* Resources */,
+				05A4D90B9CF9AF48EF07804D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68C66E8C2892A6E40001A8DA /* PBXTargetDependency */,
+			);
+			name = TechCrunchNewsUITests;
+			productName = TechCrunchNewsUITests;
+			productReference = 68C66E852892A6E40001A8DA /* TechCrunchNewsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E2D1933121AB022E00725160 /* TechCrunchNews */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2D1934F21AB022F00725160 /* Build configuration list for PBXNativeTarget "TechCrunchNews" */;
 			buildPhases = (
-				8D89919B9A48FEE162253801 /* [CP] Check Pods Manifest.lock */,
+				D3A09791340D34BBE3A923AF /* [CP] Check Pods Manifest.lock */,
 				E2D1932E21AB022E00725160 /* Sources */,
 				E2D1932F21AB022E00725160 /* Frameworks */,
 				E2D1933021AB022E00725160 /* Resources */,
-				AAF7E630EC29E4FC928DBD75 /* [CP] Embed Pods Frameworks */,
+				31B805739E6208B9FD85345D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,11 +365,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2D1935221AB022F00725160 /* Build configuration list for PBXNativeTarget "TechCrunchNewsTests" */;
 			buildPhases = (
-				BDD407A1DC4A9D3DF57DB8BF /* [CP] Check Pods Manifest.lock */,
+				8CB5BAFA2E302356ADB843F3 /* [CP] Check Pods Manifest.lock */,
 				E2D1934221AB022F00725160 /* Sources */,
 				E2D1934321AB022F00725160 /* Frameworks */,
 				E2D1934421AB022F00725160 /* Resources */,
-				5F9DB7413C43DDB7BCD08C53 /* [CP] Embed Pods Frameworks */,
+				56266E55EBBD303136FD4B4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,10 +387,14 @@
 		E2D1932A21AB022E00725160 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = macintosh;
 				TargetAttributes = {
+					68C66E842892A6E40001A8DA = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E2D1933121AB022E00725160;
+					};
 					E2D1933121AB022E00725160 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -309,11 +419,21 @@
 			targets = (
 				E2D1933121AB022E00725160 /* TechCrunchNews */,
 				E2D1934521AB022F00725160 /* TechCrunchNewsTests */,
+				68C66E842892A6E40001A8DA /* TechCrunchNewsUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		68C66E832892A6E40001A8DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686B962528990A4D00914FBC /* TechCrunchStub.json in Resources */,
+				68DEF045289A5F1700333723 /* Gherkin_FilterAndSortVendorList.feature in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2D1933021AB022E00725160 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,29 +456,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5F9DB7413C43DDB7BCD08C53 /* [CP] Embed Pods Frameworks */ = {
+		05A4D90B9CF9AF48EF07804D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TechCrunchNewsTests/Pods-TechCrunchNewsTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TechCrunchNews-TechCrunchNewsUITests/Pods-TechCrunchNews-TechCrunchNewsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TechCrunchNews-TechCrunchNewsUITests/Pods-TechCrunchNews-TechCrunchNewsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TechCrunchNewsTests/Pods-TechCrunchNewsTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechCrunchNews-TechCrunchNewsUITests/Pods-TechCrunchNews-TechCrunchNewsUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8D89919B9A48FEE162253801 /* [CP] Check Pods Manifest.lock */ = {
+		2C24F3049D4E9BF692991EDE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -373,38 +488,48 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TechCrunchNews-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TechCrunchNews-TechCrunchNewsUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AAF7E630EC29E4FC928DBD75 /* [CP] Embed Pods Frameworks */ = {
+		31B805739E6208B9FD85345D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TechCrunchNews/Pods-TechCrunchNews-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TechCrunchNews/Pods-TechCrunchNews-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TechCrunchNews/Pods-TechCrunchNews-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TechCrunchNews/Pods-TechCrunchNews-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechCrunchNews/Pods-TechCrunchNews-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BDD407A1DC4A9D3DF57DB8BF /* [CP] Check Pods Manifest.lock */ = {
+		56266E55EBBD303136FD4B4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechCrunchNewsTests/Pods-TechCrunchNewsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechCrunchNewsTests/Pods-TechCrunchNewsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechCrunchNewsTests/Pods-TechCrunchNewsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CB5BAFA2E302356ADB843F3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,9 +551,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D3A09791340D34BBE3A923AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechCrunchNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		68C66E812892A6E40001A8DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C66E942892A8E70001A8DA /* FilterAndSortVendorListFeature.swift in Sources */,
+				686B96202897FCA200914FBC /* UITestObserver.swift in Sources */,
+				68C66E882892A6E40001A8DA /* TechCrunchNewsUITests.swift in Sources */,
+				68C66E952892A8E70001A8DA /* TalabatSteps.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2D1932E21AB022E00725160 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -466,6 +624,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		68C66E8C2892A6E40001A8DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2D1933121AB022E00725160 /* TechCrunchNews */;
+			targetProxy = 68C66E8B2892A6E40001A8DA /* PBXContainerItemProxy */;
+		};
 		E2D1934821AB022F00725160 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E2D1933121AB022E00725160 /* TechCrunchNews */;
@@ -493,6 +656,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		68C66E8D2892A6E40001A8DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37C9AF7CB09B367E7457EA2E /* Pods-TechCrunchNews-TechCrunchNewsUITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPrincipalClass = "$(PRODUCT_NAME).UITestObserver";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bedi.TechCrunchNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG DEBUG=1 ENABLE_UITUNNEL=1";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TechCrunchNews;
+			};
+			name = Debug;
+		};
+		68C66E8E2892A6E40001A8DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA47AD893ABC2D629749524A /* Pods-TechCrunchNews-TechCrunchNewsUITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPrincipalClass = "$(PRODUCT_NAME).UITestObserver";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bedi.TechCrunchNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TechCrunchNews;
+			};
+			name = Release;
+		};
 		E2D1934D21AB022F00725160 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -611,7 +817,7 @@
 		};
 		E2D1935021AB022F00725160 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F08687E9D8D4F8C2DB9A7CA /* Pods-TechCrunchNews.debug.xcconfig */;
+			baseConfigurationReference = FF3679C7FCA0CA0BD33CD909 /* Pods-TechCrunchNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -631,7 +837,7 @@
 		};
 		E2D1935121AB022F00725160 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32820C1123B4672A9E59FFFF /* Pods-TechCrunchNews.release.xcconfig */;
+			baseConfigurationReference = 4772320555A848F6D5A2A72B /* Pods-TechCrunchNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -651,7 +857,7 @@
 		};
 		E2D1935321AB022F00725160 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 748546B2D8DBC6A8997F7BEB /* Pods-TechCrunchNewsTests.debug.xcconfig */;
+			baseConfigurationReference = B8336BE3F34FC11ED9877CBA /* Pods-TechCrunchNewsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -673,7 +879,7 @@
 		};
 		E2D1935421AB022F00725160 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91BE9D15801E32F1AA79B138 /* Pods-TechCrunchNewsTests.release.xcconfig */;
+			baseConfigurationReference = 7E84E081BCFDE7CDF5545AE3 /* Pods-TechCrunchNewsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -696,6 +902,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		68C66E8F2892A6E50001A8DA /* Build configuration list for PBXNativeTarget "TechCrunchNewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68C66E8D2892A6E40001A8DA /* Debug */,
+				68C66E8E2892A6E40001A8DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E2D1932D21AB022E00725160 /* Build configuration list for PBXProject "TechCrunchNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

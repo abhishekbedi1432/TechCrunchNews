@@ -26,20 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      codeCoverageEnabled = "YES"
-      shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E2D1934521AB022F00725160"
-               BuildableName = "TechCrunchNewsTests.xctest"
-               BlueprintName = "TechCrunchNewsTests"
-               ReferencedContainer = "container:TechCrunchNews.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -49,8 +37,28 @@
             ReferencedContainer = "container:TechCrunchNews.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+         <TestableReference
+            skipped = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E2D1934521AB022F00725160"
+               BuildableName = "TechCrunchNewsTests.xctest"
+               BlueprintName = "TechCrunchNewsTests"
+               ReferencedContainer = "container:TechCrunchNews.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "68C66E842892A6E40001A8DA"
+               BuildableName = "TechCrunchNewsUITests.xctest"
+               BlueprintName = "TechCrunchNewsUITests"
+               ReferencedContainer = "container:TechCrunchNews.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -72,8 +80,6 @@
             ReferencedContainer = "container:TechCrunchNews.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
