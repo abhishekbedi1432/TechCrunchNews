@@ -8,7 +8,6 @@
 
 import XCTest
 import XCTest_Gherkin
-//import SBTUITestTunnelClient
 
 final class FilterAndSortVendorListFeature: XCTestCase {
 
